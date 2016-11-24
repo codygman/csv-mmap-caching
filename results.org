@@ -1,0 +1,26 @@
+* stars
+** stars2000
+*** reading from csv 
+    43.429 seconds
+*** reading from mmap
+    0.044 seconds
+*** reading from csv and writing to mmap
+    43.429 secs
+** stars2002 doubled
+*** reading from csv and getting length
+*** reading from csv and writing to mmap
+*** reading from mmap
+** stars2002-full
+*** reading from csv
+*** reading from csv and writing to mmap
+*** reading from mmap
+* Storable.Vector vs Vector and convert
+  If fusion works correctly then these should work out to be the same. Does it happen in practice?
+** Storable.Vector directly
+real    0m43.470s
+user    0m59.152s
+sys     0m35.300s
+** Vector using convert
+real    0m42.482s
+user    0m57.088s
+sys     0m34.604s

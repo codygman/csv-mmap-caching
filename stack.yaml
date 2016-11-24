@@ -1,0 +1,11 @@
+resolver: lts-7.10
+
+packages:
+- '.'
+- location:
+    git: git@github.com:codygman/hmatrix-mmap.git
+    commit: 46ce77e
+  extra-dep: true
+
+extra-deps:
+- derive-storable-0.1.0.3
